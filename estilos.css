@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.formulario {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.formulario h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.formulario > p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 4px rgba(46, 125, 50, 0.4);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.estado-registro {
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+    font-size: 14px;
+    text-align: center;
+}
+
+.estado-registro.error {
+    color: #b3261e;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.confirmacion {
+    text-align: center;
+}
+
+.confirmacion-icono {
+    display: inline-grid;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 15px;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.confirmacion h1 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.resumen {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.resumen div {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.resumen dt {
+    margin-bottom: 4px;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.resumen dd {
+    line-height: 1.45;
+}
+
+.boton {
+    display: block;
+    padding: 14px;
+    border-radius: 6px;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #1b5e20;
+}

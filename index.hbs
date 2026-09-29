@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña Ambiental - Registro de Reciclaje</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>♻️ Campaña Ambiental</h1>
+        <p>Registro de Puntos de Reciclaje</p>
+        <form action="/registro" method="post">
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Registrar material reciclable</h2>
+
+            <p>
+                Completá el siguiente formulario con los materiales reciclables
+                que traés a la institución.
+            </p>
+
+            <form id="formulario-registro" action="/registrar" method="POST">
+
+                <div class="campo">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej: Juan Pérez"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Curso / Año:</label>
+                    <input
+                        type="text"
+                        id="curso"
+                        name="curso"
+                        placeholder="Ej: 4° A"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="material">Tipo de material:</label>
+                    <select id="material" name="material" required>
+                        <option value="">Seleccionar material</option>
+                        <option value="Plásticos">Plásticos</option>
+                        <option value="Cartón/Papel">Cartón/Papel</option>
+                        <option value="Vidrio">Vidrio</option>
+                        <option value="Residuos Electrónicos">
+                            Residuos Electrónicos
+                        </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="cantidad">
+                        Cantidad o peso aproximado:
+                    </label>
+                    <input
+                        type="text"
+                        id="cantidad"
+                        name="cantidad"
+                        placeholder='Ej: "2 bolsas", "5 kg"'
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">
+                        Mensaje o propuesta ecológica:
+                    </label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribí una propuesta para mejorar el cuidado del ambiente..."
+                        required
+                    ></textarea>
+                </div>
+
+                <p id="estado-registro" class="estado-registro" role="status" aria-live="polite"></p>
+
+                <button type="submit">
+                    Registrar material ♻️
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campaña de Economía Circular - Institución Educativa</p>
+    </footer>
+
+    
+
+</body>
+</html>
+
+
